@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+}
+
+figure {
+  display: inline-block;
+
+  img {
+    padding: 20px 0px;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+
+  li {
+    font-weight: bold;
+    padding: 0 15px;
+    height: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $blue-color;
+      border-bottom: 5px solid $blue-color;
+    }
+  }
+}
+
+a {
+  color: $strongGray-color;
+}
