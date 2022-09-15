@@ -2,7 +2,7 @@
     <div class="container">
         <nav>
             <div class="nav-left top">
-                <ul class="top-li">
+                <ul class="top">
                     <li>
                         <h3 class="h3-footer">dc comics</h3>
                     </li>

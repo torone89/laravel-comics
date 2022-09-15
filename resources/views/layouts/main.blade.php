@@ -26,6 +26,8 @@
     {{-- FOOTER --}}
     @include('includes.footer')
 
+    @include('includes.contacts')
+
 </body>
 
 </html>

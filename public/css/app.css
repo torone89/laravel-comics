@@ -122,6 +122,61 @@ a .menu-header {
   color: #484646;
 }
 
+.social-bg {
+  background-color: #484646;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign-up {
+  margin-left: 5px;
+}
+
+.social-bg button {
+  border: none;
+  border: 2px solid #1e86ed;
+  padding: 17px;
+  background-color: #484646;
+}
+
+.social-bg a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fdf0ff;
+  font-size: 15px;
+}
+
+.social-bg img {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.social-bg img:hover {
+  background-color: #fdf0ff;
+  border-radius: 50px 50px;
+}
+
+/* SPAN FOLLOW */
+.social-bg .follow {
+  text-transform: uppercase;
+  color: #1e86ed;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 10px;
+  cursor: pointer;
+}
+
 footer {
   background-image: url("../images/footer-bg.jpg");
   background-size: cover;
