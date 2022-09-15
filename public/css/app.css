@@ -33,6 +33,12 @@ a {
   color: #484646;
 }
 
+.jumbo {
+  height: 400px;
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+}
+
 /* GENERICS */
 * {
   margin: 0;

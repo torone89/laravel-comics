@@ -1,5 +1,5 @@
    @php
-       $links = config('main-menu');
+       $links = config('main_menu');
    @endphp
 
    <header>
@@ -7,7 +7,7 @@
            <nav>
                <figure>
 
-                   <img src="{{ asset('img/dc-logo.png') }}" alt="logo">
+                   <img src="{{ asset('images/dc-logo.png') }}" alt="logo">
 
                </figure>
                <!-- LOGICA DINAMICA LISTE -->

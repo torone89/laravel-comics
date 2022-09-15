@@ -11,8 +11,11 @@
 </head>
 
 <body>
-    @include('includes.header')
 
+    {{-- HEADER --}}
+    @include('includes.header')
+    {{-- JUMBO --}}
+    @include('includes.jumbo')
 
 </body>
 
