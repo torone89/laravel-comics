@@ -56,3 +56,10 @@ Route::get('news', function () {
 Route::get('shop', function () {
     return view('shop');
 })->name('shop');
+
+
+Route::get('comics', function () {
+    $data = config('comics');
+    $comics = $data;
+    return view('comics', compact('comics'));
+})->name('comics');
