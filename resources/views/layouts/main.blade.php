@@ -15,13 +15,13 @@
     {{-- HEADER --}}
     @include('includes.header')
     {{-- JUMBO --}}
-    @include('includes.jumbo')ù
+    @include('includes.jumbo')
 
     <main>
-        @yield('main')
+        @yield('comics')
 
     </main>
-    @yield('comics')
+
 
     {{-- FOOTER --}}
     @include('includes.footer')

@@ -1,3 +1,87 @@
+.card-section {
+  background-color: #1b1b1b;
+}
+
+.cards-box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container-card {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button-series {
+  position: absolute;
+  left: -10px;
+  top: -25px;
+  width: 300px;
+  padding: 5px 5px;
+  font-size: 18px;
+}
+.button-series button {
+  background-color: #1e86ed;
+  padding: 10px 14px;
+  margin: 0 auto;
+  color: #fdf0ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.button-series button:hover {
+  background-color: #fdf0ff;
+  color: black;
+  border: 1px solid black;
+}
+
+.button-load {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.button-load button {
+  background-color: #1e86ed;
+  padding: 15px 50px;
+  margin: 0 auto;
+  color: #fdf0ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.button-load button:hover {
+  background-color: #fdf0ff;
+  color: black;
+  border: 1px solid black;
+}
+
+.cards {
+  margin-top: 30px;
+  flex-basis: calc(16.6666666667% - 20px);
+  padding: 5px;
+}
+.cards img {
+  width: 1500px;
+  height: 150px;
+  cursor: pointer;
+}
+.cards img:hover {
+  transition: 0, 3s;
+  transform: scale(1);
+  opacity: 50%;
+}
+.cards h3 {
+  margin-top: 5px;
+  color: #fdf0ff;
+  font-size: 15px;
+}
+
 header {
   margin: 10px;
 }
