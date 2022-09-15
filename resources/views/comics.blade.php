@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', 'Comics')
+
 @section('comics')
     <section class="card-section">
         <div class="container-card">
@@ -14,7 +16,7 @@
                 @foreach ($comics as $comics)
                     <div class="cards">
                         <img src="{{ $comics['thumb'] }}" alt="">
-                        <h3>{{ $comics['title'] }}}</h3>
+                        <h3>{{ $comics['title'] }}</h3>
                         <h6>{{ $comics['series'] }}</h6>
                         <p>{{ $comics['price'] }}</p>
 

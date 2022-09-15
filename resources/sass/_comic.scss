@@ -1,5 +1,7 @@
 .card-section {
   background-color: $CardBgGray-color;
+
+  h6, p {color: gray;}
 }
 
 .cards-box {
@@ -7,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 // BUTTON LOAD STYLE// + CUrrentSeries (provvisorio)
 .container-card {

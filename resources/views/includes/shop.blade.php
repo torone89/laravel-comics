@@ -3,7 +3,7 @@
         <ul>
             <li>
                 <a href="">
-                    <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="logo">" alt="">
+                    <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="logo">
                 </a>
                 <span class="text-white">DIGITAL COMICS</span>
             </li>
