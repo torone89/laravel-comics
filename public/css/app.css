@@ -122,6 +122,28 @@ a .menu-header {
   color: #484646;
 }
 
+.shop {
+  background-color: #1e86ed;
+  padding: 50px 0;
+}
+
+.shop ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+.shop ul li {
+  display: flex;
+  align-items: center;
+  color: #fdf0ff;
+  cursor: pointer;
+}
+.shop ul li img {
+  width: 40px;
+  margin-right: 15px;
+}
+
 .social-bg {
   background-color: #484646;
 }
