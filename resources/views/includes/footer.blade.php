@@ -1,10 +1,10 @@
 <footer>
     <div class="container">
         <nav>
-            <div class="nav-left">
-                <ul>
+            <div class="nav-left top">
+                <ul class="top-li">
                     <li>
-                        <h3>dc comics</h3>
+                        <h3 class="h3-footer">dc comics</h3>
                     </li>
                     <li><a href="#">Characters</a></li>
                     <li><a href="#">Comics</a></li>
@@ -14,7 +14,7 @@
                     <li><a href="#">Videos</a></li>
                     <li><a href="#">News</a></li>
                     <li>
-                        <h3>shop</h3>
+                        <h3 class='h3-footer'>shop</h3>
                     </li>
                     <li><a href="#">Shop DC</a></li>
                     <li><a href="#">Shop DC Collectibles</a></li>
@@ -22,7 +22,7 @@
 
                 <ul>
                     <li>
-                        <h3>dc</h3>
+                        <h3 class='h3-footer'>dc</h3>
                     </li>
                     <li><a href="#">Terms Of Use</a></li>
                     <li><a href="#">Privacy policy (New)</a></li>
@@ -39,7 +39,7 @@
 
                 <ul>
                     <li>
-                        <h3>sites</h3>
+                        <h3 class='h3-footer'>sites</h3>
                     </li>
                     <li><a href="#">DC</a></li>
                     <li><a href="#">MAD Magazine</a></li>
@@ -49,9 +49,9 @@
                 </ul>
             </div>
 
-            <div class="nav-right">
+            <div class="nav-right top">
                 <figure>
-                    <img src="../assets/img/dc-logo-bg.png" alt="" />
+                    <img src="{{ asset('images/dc-logo-bg.png') }}" alt="" />
                 </figure>
             </div>
 

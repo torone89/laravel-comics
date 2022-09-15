@@ -4,17 +4,17 @@
 
    <header>
        <div class="container">
-           <nav>
-               <figure>
+           <nav class="menu-header">
+               <figure class="menu-header">
 
                    <img src="{{ asset('images/dc-logo.png') }}" alt="logo">
 
                </figure>
                <!-- LOGICA DINAMICA LISTE -->
-               <ul>
+               <ul class="menu-header">
                    @foreach ($links as $link)
                        <li>
-                           <a href="{{ route($link['rout_name']) }}">
+                           <a class="menu-header" href="{{ route($link['rout_name']) }}">
                                {{ $link['text'] }}</a>
                        </li>
                    @endforeach

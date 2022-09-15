@@ -1,10 +1,11 @@
 // HEADER
 
-nav {
+header {margin: 10px;}
+nav .menu-header{
   display: flex;
 }
 
-figure {
+figure .menu-header{
   display: inline-block;
 
   img {
@@ -12,11 +13,12 @@ figure {
   }
 }
 
-ul {
+.menu-header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  margin-left: 10px;
 
   li {
     font-weight: bold;
@@ -33,6 +35,6 @@ ul {
   }
 }
 
-a {
+a .menu-header {
   color: $strongGray-color;
 }

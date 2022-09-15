@@ -1,7 +1,7 @@
 
 // footer
 footer {
-  background-image: url("../imgages/footer-bg.jpg");
+  background-image: url("../images/footer-bg.jpg");
   background-size: cover;
 }
 nav {
@@ -11,11 +11,15 @@ nav {
 .nav-left { 
   display: flex;
   padding: 40px 0;
-  li {
+ 
+
+}
+
+footer li {
     margin-right: 30px;
     line-height: 30px;
-  }
-}
+   
+ }
 
 h3 {
   text-transform: uppercase;
