@@ -19,7 +19,7 @@
 
     <main>
         @yield('comics')
-        @include('includes.shop')
+        @yield('shop')
     </main>
 
 
