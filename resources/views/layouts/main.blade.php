@@ -17,6 +17,9 @@
     {{-- JUMBO --}}
     @include('includes.jumbo')
 
+    {{-- FOOTER --}}
+    @include('includes.footer')
+
 </body>
 
 </html>
