@@ -52,7 +52,7 @@
                     </span>
 
                     {{-- description --}}
-                    <div class="description py-2">
+                    <div class="description py-3  mr-4 pr-3">
                         <p>
                             {{ $comic['description'] }}
                         </p>
