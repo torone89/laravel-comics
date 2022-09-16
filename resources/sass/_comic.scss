@@ -1,89 +1,42 @@
-.card-section {
-  background-color: $CardBgGray-color;
+.comic-page {
 
-  h6, p {color: gray;}
-}
+    .blue-bg {
+        height: 80px;
+        width: 100%;
+        background-color:$blue-color ;}
 
-.cards-box {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 20px;
-}
-// BUTTON LOAD STYLE// + CUrrentSeries (provvisorio)
-.container-card {
-  position: relative;
- max-width: 1200px;
-    margin: 0 auto;
-}
 
-.button-series {
-  position: absolute;
-  left: -10px;
-  top: -25px;
-  width: 300px;
-  padding: 5px 5px;
-  font-size: 18px;
-  button {
-    background-color: $blue-color;
-    padding: 10px 14px;
-    margin: 0 auto;
-    color: $lightVhite-color;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
-    border: 1px solid transparent;
-    cursor: pointer;
+    .thumb {
+        position: relative;
 
-    &:hover {
-      background-color: $lightVhite-color;
-      color: black;
-      border: 1px solid black;
+        img {
+            position: absolute;
+            bottom: 25px;
+        }
+
+        .label {
+            position: absolute;
+            background-color:$blue-comic;
+            text-align: center;
+            text-transform: uppercase;
+            color: $lightVhite-color;
+            font-size: 0.4rem;
+
+            &#comic-book{
+                bottom: 304px;
+                width: 90px;
+            
+            }
+    
+            &#view-gallery {
+                bottom: 25px;
+                width: 192px;
+            }
+                       
+          }
+    
+      
     }
-  }
-}
-.button-load {
-  padding-bottom: 30px;
-  text-align: center;
 
-  button {
-    background-color: $blue-color;
-    padding: 15px 50px;
-    margin: 0 auto;
-    color: $lightVhite-color;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
-    border: 1px solid transparent;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $lightVhite-color;
-      color: black;
-      border: 1px solid black;
-    }
-  }
-}
-
-.cards {
-  margin-top: 30px;
-  flex-basis: calc(100% / 6 - 20px);
-  padding: 5px;
-
-  img {
-    width: 1500px;
-    height: 150px;
-    cursor: pointer;
-    &:hover {
-      transition: 0, 3s;
-      transform: scale(1);
-      opacity: 50%;
-    }
-  }
-  h3 {
-    margin-top: 5px;
-    color: $lightVhite-color;
-    font-size: 15px;
-  }
+    
 }

@@ -2,6 +2,35 @@
   color: gray;
 }
 
+.comic-page .blue-bg {
+  height: 80px;
+  width: 100%;
+  background-color: #1e86ed;
+}
+.comic-page .thumb {
+  position: relative;
+}
+.comic-page .thumb img {
+  position: absolute;
+  bottom: 25px;
+}
+.comic-page .thumb .label {
+  position: absolute;
+  background-color: #00a8d7;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fdf0ff;
+  font-size: 0.4rem;
+}
+.comic-page .thumb .label#comic-book {
+  bottom: 304px;
+  width: 90px;
+}
+.comic-page .thumb .label#view-gallery {
+  bottom: 25px;
+  width: 192px;
+}
+
 .card-section {
   background-color: #1b1b1b;
 }
@@ -279,5 +308,10 @@ a {
 /* UTILS */
 .container {
   max-width: 1200px;
+  margin: 0 auto;
+}
+
+.small-container {
+  width: 60%;
   margin: 0 auto;
 }

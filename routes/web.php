@@ -65,7 +65,7 @@ Route::get('/comics', function () {
 })->name('comics');
 
 // PAGINA DETTAGLI DI UN SINGOLO COMICS
-Route::get('/products/{id}', function ($id) {
+Route::get('/comics/{id}', function ($id) {
     $comics = config('comics');
     if (!is_numeric($id) || $id < 0 || $id >= count($comics)) {
         abort(404);
