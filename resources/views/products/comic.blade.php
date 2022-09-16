@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+@section('title', $comic['title'])
 
 @section('comics')
     <section class="comic-page">
