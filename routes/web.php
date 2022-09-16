@@ -19,6 +19,7 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 })->name('home');
 
+
 Route::get('characters', function () {
     return view('characters');
 })->name('characters');
@@ -57,8 +58,18 @@ Route::get('shop', function () {
 })->name('shop');
 
 
-Route::get('comics', function () {
+Route::get('/comics', function () {
     $data = config('comics');
     $comics = $data;
-    return view('comics', compact('comics'));
+    return view('products.comics', compact('comics'));
 })->name('comics');
+
+// PAGINA DETTAGLI DI UN SINGOLO COMICS
+Route::get('/products/{id}', function ($id) {
+    $comics = config('comics');
+    if (!is_numeric($id) || $id < 0 || $id >= count($comics)) {
+        abort(404);
+    }
+    $comic = $comics[$id];
+    return view('products.comic', compact('comic'));
+})->name('products.comic');

@@ -20,6 +20,7 @@
     <main>
         @yield('comics')
         @yield('shop')
+
     </main>
 
 
