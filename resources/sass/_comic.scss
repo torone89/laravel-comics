@@ -1,10 +1,9 @@
-.comic-page {
-
+#comic-page {
     .blue-bg {
         height: 80px;
         width: 100%;
-        background-color:$blue-color ;}
-
+        background-color: $blue-color;
+    }
 
     .thumb {
         position: relative;
@@ -16,27 +15,76 @@
 
         .label {
             position: absolute;
-            background-color:$blue-comic;
+            background-color: $blue-comic;
             text-align: center;
             text-transform: uppercase;
             color: $lightVhite-color;
             font-size: 0.4rem;
 
-            &#comic-book{
+            &#comic-book {
                 bottom: 304px;
                 width: 90px;
-            
             }
-    
+
             &#view-gallery {
                 bottom: 25px;
                 width: 192px;
             }
-                       
-          }
-    
-      
+        }
     }
 
-    
+    h1 {
+        margin: 70px 0 40px;
+        text-transform: uppercase;
+
+        color: #003f5e;
+    }
+    .price-and-info {
+        background-color: #55ba59;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-bottom: 1px solid black;
+    }
+    .price {
+        padding-right: 100px;
+        color: white;
+        span {
+            color: #a8f98e;
+        }
+    }
+
+    #available {
+        padding: 90px 10px;
+        text-transform: uppercase;
+        color: #a8f98e;
+    }
+
+    .description {
+        margin-top: 30px;
+        color: #003f5e;
+    }
+
+    #check {
+        border-left: 1px solid #000000;
+        padding: 10px 20px;
+        color: white;
+    }
+    .advert {
+        text-align: right;
+        margin-top: 70px;
+        font-weight: 600px;
+        font-size: 17px;
+        color: gray;
+        text-transform: uppercase;
+    }
+}
+
+#bg-gray {
+    background-color: #f6f6f6;
+
+    h3 {
+        color: #003f5e;
+    }
 }
