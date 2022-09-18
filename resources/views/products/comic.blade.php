@@ -29,19 +29,18 @@
 
         <div class="small-container">
 
+
+            {{-- current series title --}}
+            <h1>{{ $comic['title'] }}</h1>
+
+
             <div class="row">
-
-                {{-- info, price and description --}}
-                <div class="col-8">
-                    {{-- current series title --}}
-                    <h1>{{ $comic['title'] }}</h1>
-
-                    {{-- price --}}
-                    <span class="price-and-info">
-                        <span class="price">
+                <div class="col-9 m-0 p-0">
+                    <div class="price-and-info">
+                        {{-- price --}}
+                        <span class="price ">
                             <span>U.S. Price: </span> {{ $comic['price'] }}
                         </span>
-
                         <span id="available">
                             available
                         </span>
@@ -49,10 +48,12 @@
                             Check Availability
 
                         </span>
-                    </span>
+
+                    </div>
+
 
                     {{-- description --}}
-                    <div class="description py-3  mr-4 pr-3">
+                    <div class="description mr-1">
                         <p>
                             {{ $comic['description'] }}
                         </p>
@@ -60,15 +61,15 @@
                 </div>
 
                 {{-- advertisement --}}
-                <div class="col-4">
+                <div class="col-3 pb-5">
                     <div class="advert">
                         advertisement
                     </div>
 
-                    <img src="{{ asset('../images/adv.jpg') }}" alt="apply now">
+                    <img class="img-fluid" src="{{ asset('../images/adv.jpg') }}" alt="apply now">
                 </div>
-
             </div>
+        </div>
         </div>
 
 
@@ -81,24 +82,26 @@
                             <h3 class="mb-3">Talent</h3>
                         </div>
                         <div class="row border-bottom">
-                            <div class="col-12  ">
-                                <nav class="fw-bold text-bottom"> Art by:</nav>
-
+                            <div class="col-12  p-0 m-0 ">
+                                <nav class="fw-bold text-bottom"> Art by: </nav>
                                 @foreach ($comic['artists'] as $artist)
-                                    <a href="#">
-                                        {{ $artist }} {{ !$loop->last ? ',' : '' }}
-                                    </a>
+                                    <nav>
+                                        <a class="text-bottom-blue" href="#">
+                                            {{ $artist }} {{ !$loop->last ? ',' : '' }}
+                                        </a>
+                                    </nav>
                                 @endforeach
+
                             </div>
                             <div class="col-9">
 
                             </div>
                         </div>
                         <div class="row border-bottom">
-                            <div class="col-12">
+                            <div class="col-12 p-0 m-0">
                                 <nav class="fw-bold text-bottom">Written by:</nav>
                                 @foreach ($comic['writers'] as $writer)
-                                    <a href="#">
+                                    <a class="text-bottom-blue" href="#">
                                         {{ $writer }} {{ !$loop->last ? ',' : '' }}
                                     </a>
                                 @endforeach
@@ -113,15 +116,15 @@
                             <h3 class="mb-3">Specs</h3>
                         </div>
                         <div class="row border-bottom">
-                            <div class="col-5">
+                            <div class="col-5  p-0 m-0">
                                 <nav class="text-bottom"> Series:</nav>
                             </div>
-                            <div class="col-7">
-                                {{ $comic['series'] }}
+                            <div class="col-7 d-flex align-items-center">
+                                <nav class="text-bottom-blue text-uppercase ">{{ $comic['series'] }}</nav>
                             </div>
                         </div>
                         <div class="row border-bottom">
-                            <div class="col-5">
+                            <div class="col-5  p-0 m-0">
                                 <nav class="text-bottom"> U.S. Price:</nav>
                             </div>
                             <div class="col-7">
@@ -129,7 +132,7 @@
                             </div>
                         </div>
                         <div class="row border-bottom">
-                            <div class="col-5">
+                            <div class="col-5  p-0 m-0">
                                 <nav class="text-bottom"> Sale Date:</nav>
                             </div>
                             <div class="col-7">
@@ -141,6 +144,38 @@
                 </div>
             </div>
 
+            <div class="container-fluid border-top">
+                <div class="container">
+                    <section id='shop-comic'>
+                        <ul class="row text-secondary fw-bold m-0 p-0">
+                            <li class="col-3 p-3 d-flex justify-content-between border  text-uppercase">
+                                <span>digital comics</span>
+
+                                {{-- <img src="{{ asset('../images/cta-icons.png') }}" alt=""> --}}
+
+                            </li>
+                            <li class="col-3 p-3 d-flex justify-content-between border text-uppercase">
+                                <span>shop dc</span>
+
+                                {{-- <img src="{{ asset('../images/cta-icons.png') }}" alt=""> --}}
+
+                            </li>
+                            <li class="col-3 p-3 d-flex justify-content-between border  text-uppercase">
+                                <span>comic shop locator</span>
+
+                                {{-- <img src="{{ asset('../images/cta-icons.png') }}" alt=""> --}}
+
+                            </li>
+                            <li class="col-3 p-3 d-flex justify-content-between border  text-uppercase">
+                                <span>subscription</span>
+
+                                {{-- <img src="{{ asset('../images/cta-icons.png') }}" alt=""> --}}
+
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
 
         </section>
 

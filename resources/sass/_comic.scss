@@ -48,7 +48,7 @@
         border-bottom: 1px solid black;
     }
     .price {
-        padding-right: 100px;
+        padding-right: 220px;
         color: white;
         span {
             color: #a8f98e;
@@ -64,16 +64,13 @@
     .description {
         margin-top: 30px;
         color: #003f5e;
+        font-size: 14px;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
-    #check {
-        border-left: 1px solid #000000;
-        padding: 10px 20px;
-        color: white;
-    }
     .advert {
         text-align: right;
-        margin-top: 70px;
         font-weight: 600px;
         font-size: 17px;
         color: gray;
@@ -90,7 +87,19 @@
 }
 
 .text-bottom {
-    color: $blue-color;
+    color: #003f5e;
     font-size: 16px;
     font-weight: 500;
+}
+
+#check {
+    border-left: 1px solid #000000;
+    padding: 10px 20px;
+    color: white;
+}
+
+.text-bottom-blue {
+    color: $blue-comic;
+    font-weight: bolder;
+    font-size: 13px;
 }
