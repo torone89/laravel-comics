@@ -379,3 +379,8 @@ a {
   width: 60%;
   margin: 0 auto;
 }
+
+.medium-container {
+  width: 80%;
+  margin: 0 auto;
+}

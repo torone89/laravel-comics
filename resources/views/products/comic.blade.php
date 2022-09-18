@@ -16,7 +16,7 @@
 
         {{-- thumb --}}
         <div class="thumb">
-            <div class="small-container">
+            <div class="medium-container">
                 {{-- img --}}
                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
 
@@ -27,7 +27,7 @@
         </div>
         {{-- title and description --}}
 
-        <div class="small-container">
+        <div class="medium-container">
 
 
             {{-- current series title --}}
@@ -35,7 +35,7 @@
 
 
             <div class="row">
-                <div class="col-9 m-0 p-0">
+                <div class="col-8 m-0 p-0">
                     <div class="price-and-info">
                         {{-- price --}}
                         <span class="price ">
@@ -61,12 +61,12 @@
                 </div>
 
                 {{-- advertisement --}}
-                <div class="col-3 pb-5">
+                <div class="col-4 pb-5 d-flex flex-column flex-end">
                     <div class="advert">
                         advertisement
                     </div>
 
-                    <img class="img-fluid" src="{{ asset('../images/adv.jpg') }}" alt="apply now">
+                    <img class="img-fluid pl-5" src="{{ asset('../images/adv.jpg') }}" alt="apply now">
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
 
 
         <section id="bg-gray">
-            <div class="small-container py-5">
+            <div class="medium-container py-5">
 
                 <div class="row justify-content-between">
                     <div class="col-5">
