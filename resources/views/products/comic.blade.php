@@ -86,11 +86,9 @@
                             <div class="col-12  p-0 m-0 ">
                                 <nav class="fw-bold text-bottom"> Art by: </nav>
                                 @foreach ($comic['artists'] as $artist)
-                                    <nav>
-                                        <a class="text-bottom-blue" href="#">
-                                            {{ $artist }} {{ !$loop->last ? ',' : '' }}
-                                        </a>
-                                    </nav>
+                                    <a class="text-bottom-blue" href="#">
+                                        {{ $artist }} {{ !$loop->last ? ',' : '' }}
+                                    </a>
                                 @endforeach
 
                             </div>
