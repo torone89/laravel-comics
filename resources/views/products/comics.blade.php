@@ -2,7 +2,7 @@
 
 @section('title', 'Comics')
 
-@section('comics')
+@section('main-content')
     <section class="card-section">
         <div class="container-card">
             <!-- BUTTON CURRENT SERIES -->

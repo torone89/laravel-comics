@@ -7,7 +7,7 @@
 
 
 
-@section('comics')
+@section('main-content')
     <section id="comic-page">
 
         {{-- BARRA SFONDO BLU --}}
@@ -30,12 +30,13 @@
         <div class="medium-container">
 
 
-            {{-- current series title --}}
-            <h1>{{ $comic['title'] }}</h1>
+
 
 
             <div class="row">
                 <div class="col-8 m-0 p-0">
+                    {{-- current series title --}}
+                    <h1 class="ml-0">{{ $comic['title'] }}</h1>
                     <div class="price-and-info">
                         {{-- price --}}
                         <span class="price ">
@@ -148,7 +149,7 @@
                 <div class="container">
                     <section id='shop-comic'>
                         <ul class="row text-secondary fw-bold m-0 p-0">
-                            <li class="col-3 p-3 d-flex justify-content-between border  text-uppercase">
+                            <li class="col-3 p-3 d-flex justify-content-between border text-uppercase">
                                 <span>digital comics</span>
 
                                 {{-- <img src="{{ asset('../images/cta-icons.png') }}" alt=""> --}}
@@ -160,13 +161,13 @@
                                 {{-- <img src="{{ asset('../images/cta-icons.png') }}" alt=""> --}}
 
                             </li>
-                            <li class="col-3 p-3 d-flex justify-content-between border  text-uppercase">
+                            <li class="col-3 p-3 d-flex justify-content-between border text-uppercase">
                                 <span>comic shop locator</span>
 
                                 {{-- <img src="{{ asset('../images/cta-icons.png') }}" alt=""> --}}
 
                             </li>
-                            <li class="col-3 p-3 d-flex justify-content-between border  text-uppercase">
+                            <li class="col-3 p-3 d-flex justify-content-between border text-uppercase">
                                 <span>subscription</span>
 
                                 {{-- <img src="{{ asset('../images/cta-icons.png') }}" alt=""> --}}

@@ -4,7 +4,7 @@
 @section('title', 'Shop')
 
 
-@section('shop')
+@section('main-content')
     <section class="shop">
         <div class="container">
             <ul>

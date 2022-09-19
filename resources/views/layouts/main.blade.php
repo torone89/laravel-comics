@@ -24,8 +24,8 @@
     @include('includes.jumbo')
 
     <main>
-        @yield('comics')
-        @yield('shop')
+        @yield('main-content')
+
 
     </main>
 
